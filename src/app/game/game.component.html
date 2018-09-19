@@ -1,0 +1,25 @@
+<div class="title" >
+    {{ title }}
+</div>
+<div>
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>   
+    <input type="text" [(ngModel)]="searchTitle" class="form-control" placeholder="Search (by name)" />
+  </div>
+  
+  <div class="padding" *ngFor="let details of gamesDetails | customFilter: searchTitle ">
+      <div class="inside">
+            <div style="width: 470px; display: flex;">
+              <div class="overflow"> {{details.title}} </div> 
+              <div style="width: 20px;"  *ngIf="details.editors_choice=='Y'" class="fa fa-star checked"></div>
+            </div> 
+            <div style="font-size: 10px; padding-left: 30px;"> {{details.platform}}</div>
+            <br/>
+            <hr/>
+            <div style="width: 470px; display: flex;">
+              <label style="width: 450px; padding-left: 30px;">Genre : {{details.genre}}</label>
+              <strong class="pos"> {{details.score}}</strong>
+            </div>
+      </div>
+  </div>
+</div>

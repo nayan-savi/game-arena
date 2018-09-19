@@ -1,0 +1,57 @@
+.padding {
+    padding: 10px 0px 10px 0px;
+}
+
+.input-group {
+    padding-top: 10px;
+}
+.p{
+    widows: 200px;
+}
+
+.inside {
+    width: 500px;
+    border: solid 2px #ccc;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 20px;
+    background-color:white;
+}
+
+.overflow {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip; 
+    font-size: 22px;
+    font-weight: bold;
+    width: 450px;
+    padding-left: 30px;
+}
+
+.pos {
+    color: black;
+    width: 20px;
+    
+}
+.checked {
+    color: orange;
+}
+
+.title{
+    background-color:dimgrey;
+    padding: 30px; 
+    font-size: 25px; 
+    font-weight: bold; 
+    text-align: center
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    
+    border: solid 1px #ccc;
+} 
+  
